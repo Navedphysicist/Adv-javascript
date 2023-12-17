@@ -26,12 +26,10 @@ let mary = { name: "Mary", surname: "Key", id: 3 };
 let exampleInputArray2 = [ john, pete, mary ];
 
 function getMassagedUsers(users){
-    return users.reduce((acc, el) => {
-      acc.push({ "fullName" : `${el.name} ${el.surname}` , "id" : el.id}) ;
-      
-      return acc;
+    return users.map((user) => {
+     return { "fullName" : `${user.name} ${user.surname}` , "id" : user.id} ;
 
-    }, [])
+    })
   
 }
 
