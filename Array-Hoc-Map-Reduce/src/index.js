@@ -8,14 +8,14 @@ let exampleInputArray1 = [
 
 function getUsersObj(users) {
   return users.reduce((acc, el) => {
+    console.log(acc, el);
     acc[el.name] = el.id;
     return acc;
   }, {})
-  // your solution here.
 }
 
 let output = getUsersObj(exampleInputArray1);
-console.log(output);
+// console.log(output);
 
 
 // Problem statement 2
@@ -34,7 +34,7 @@ function getMassagedUsers(users){
 }
 
 let output2 = getMassagedUsers(exampleInputArray2);
-console.log(output2)
+// console.log(output2)
 
 export {
   getUsersObj,

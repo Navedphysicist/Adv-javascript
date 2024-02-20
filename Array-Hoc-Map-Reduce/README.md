@@ -56,6 +56,8 @@ let mary = { name: "Mary", surname: "Key", id: 3 };
 let exampleInputArray2 = [ john, pete, mary ];
 ```
 
+
+
 example invocation: 
 ```
 let output2 = getMassagedUsers(exampleInputArray2);
@@ -70,3 +72,4 @@ example output:
   { fullName: 'Mary Key', id: 3 }
 ]
 ```
+
