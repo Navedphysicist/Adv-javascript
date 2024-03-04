@@ -53871,7 +53871,7 @@
       "id": 5,
       "userId": 24,
       "title": "gleaming Turkish Van",
-      "completed": false,
+      "completed": true,
       "createdAt": 1678975910353,
       "category": "Family"
     },
