@@ -51,18 +51,18 @@ function Animal(name, type) {
   this.name = name;
   this.type = type;
 
-  
 }
 Animal.prototype.makeSound = function () {
   return `Animal is making a sound`;
 };
 
 function Mammal(name, type, hasFur) {
-    
+   
   Animal.call(this,name,type)
   this.hasFur = hasFur;
 
 }
+
 Object.setPrototypeOf(Mammal.prototype,Animal.prototype)
 Mammal.prototype.makeSound = function () {
   return `Mammal is making a sound`;
